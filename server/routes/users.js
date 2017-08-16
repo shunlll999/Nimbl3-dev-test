@@ -9,6 +9,8 @@ router.route('/').get(userCtrl.list)
   /** POST /api/users - Create new user */
   .post(userCtrl.create);
 
+  // router.route('/:user/:pass').post(userCtrl.login);
+
 router.route('/:userId')
   /** GET /api/users/:userId - Get user */
   .get(auth, userCtrl.get)

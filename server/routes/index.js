@@ -14,6 +14,6 @@ router.get('/api-status', (req, res) =>
 
 router.use('/users', userRoutes);
 router.use('/tasks', taskRoutes);
-router.use('/auth', authRoutes);
+router.use('/auth', authRoutes); 
 
 export default router;

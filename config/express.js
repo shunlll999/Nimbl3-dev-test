@@ -2,11 +2,14 @@ import express from 'express';
 import expressValidation from 'express-validation';
 import bodyParser from 'body-parser';
 import routes from '../server/routes';
+import cors from './cors';
 
 const app = express();
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+
+app.use(cors());
 
 // mount all routes on /api path
 app.use('/api', routes);
