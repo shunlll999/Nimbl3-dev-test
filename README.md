@@ -14,7 +14,8 @@ To run unit tests simply run `gulp mocha`.
 +++++++++++++++++++++++++++++++++++++++++++++++
 
 ## Installation and running client (React)
-
+# I was using create-react-app npm from here `https://github.com/facebookincubator/create-react-app`
+# goto git ``
 1. cd nimbl3-test-client and  `npm install`
 2. Run `npm start`
 OR
